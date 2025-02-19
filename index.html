@@ -11,7 +11,7 @@
     <!-- daisyui  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- fontawesome -->
+    <!-- font awesome -->
     <script src="https://kit.fontawesome.com/74033f8f16.js" crossorigin="anonymous"></script>
     <script>
         tailwind.config = {
@@ -77,21 +77,96 @@
                 </div>
             </div>
         </nav>
-        <div>
+        <div class="flex flex-col mx-auto">
             <!--  -->
-            <div>
-                <h1></h1>
-                <p></p>
+            <div class="mt-48">
+                <h1 class="text-3xl lg:text-5xl font-semibold text-center mb-5">Freshness <span class="text-btn-bg">You Can <br>
+                    Count</span> On, Prices You’ll Love!</h1>
+                <p class="font-normal text-center w-5/6 mx-auto mb-5">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
             </div>
             <!-- img -->
              <div>
-                <img src="/c2-assets/hero-vegetables.png" alt="">
+                <img class="mx-auto" src="/c2-assets/hero-vegetables.png" alt="">
              </div>
         </div>
     </header>
     <!-- main section -->
      <main>
+        <!-- card section -->
+        <div class="mx-28 my-10 ">
+            <h1 class="text-btn-bg text-3xl lg:text-5xl font-semibold mb-5">Services</h1>
+            <!-- cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- card 1 -->
+                <div class="card bg-[#EFEBE3] rounded-[16px]">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="/c2-assets/service.png"
+                        alt=""
+                        class="" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-bold">24/7 Services</h2>
+                      <p>We operate continuously, providing assistance or access at any time of the day or night.</p>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card bg-[#EFEBE3] rounded-[16px]">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="/c2-assets/delivery.png"
+                        alt=""
+                        class="" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-bold">Fast Delivery</h2>
+                      <p>We enhances customer satisfaction by minimizing wait times and ensuring prompt fulfillment of orders.</p>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="card bg-[#EFEBE3] rounded-[16px]">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="/c2-assets/healthy.png"
+                        alt=""
+                        class="" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-bold">Healthy Products </h2>
+                      <p>Healthy products are items made with natural, nutritious, and minimally processed ingredients that promote overall well-being.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Product section -->
+         <div class="w-full bg-[#EFEBE3] p-28">
+            <h1 class="text-btn-bg text-3xl lg:text-5xl font-semibold mb-5">Popular Products</h1>
+            <div>
+                <!-- products grid -->
+                 <div class="relative grid grid-cols-2 lg:grid-cols-4">
+                     <div class="flex flex-col bg-gradient-to-br from-green-600 to-white">
+                        <div class="row-span-3 rounded-xl product-1 mb-3 mx-3 overflow-hidden">
+                            <h1><span>30</span>% off</h1>
+                            <p>Discover a world of treats, toys and essentials handpicked for</p>
+                            <button class="btn">Buy Now</button>
+                         </div>
+                         <div>
+                            <img src="/c2-assets/vegetable-offer.png" alt="">
+                         </div>
+                     </div>
+                     <div class="rounded-lg bg-gray-600 product-2 mb-3 mx-2">2</div>
+                     <div class="rounded-lg bg-gray-600 product-3 mb-3 mx-2">3</div>
+                     <div class="rounded-lg bg-gray-600 product-4 mb-3 mx-2">4</div>
+                     <div class="rounded-lg bg-gray-600 product-5 mb-3 mx-2">5</div>
+                     <div class="rounded-lg bg-gray-600 product-6 mb-3 mx-2">6</div>
+                     <div class="rounded-lg bg-gray-600 product-7 mb-3 mx-2">7</div>
+                     <div class="rounded-lg bg-gray-600 product-8 mb-3 mx-2">8</div>
+                     <div class="rounded-lg bg-gray-600 product-9 mb-3 mx-2">9</div>
+                     <div class="rounded-lg bg-gray-600 product-10 mb-3 mx-2">10</div>
+                 </div>
+            </div>
 
+         </div>
      </main>
      <!-- footer section -->
       <footer>
